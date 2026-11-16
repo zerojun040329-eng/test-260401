@@ -1,7 +1,7 @@
-# test-260401
-### 글씨크기
-# 글씨 크기
-**1111222333**
-*이탈릭체*
-> ㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑㅑ
-- QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+```mermaid
+erDiagram
+  회사 {
+    String 회사명 PK
+    String 산업분야
+  }
+```
