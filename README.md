@@ -120,7 +120,7 @@ erDiagram
   버스기사_운행정보 {
     String 주민등록번호 PK, FK
     String 차량_번호 PK, FK
-    date 운행일 PK
+    date 운행일시 PK
   }
 
   버스_회사 ||--|{ 버스_노선 : "노선 관리 회사"
