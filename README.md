@@ -112,6 +112,7 @@ erDiagram
   }
   버스기사 {
     String 주민등록번호 PK
+    String 회사명 FK
     int 근무연수
     int 연봉
   }
