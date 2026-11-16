@@ -21,14 +21,14 @@ erDiagram
     date 취득일시
   }
   구직자_취업신청내역 {
-    String 주민등록번호 PK, FK
-    String 회사명 PK, FK
+    int 신청번호 PK
+    String 주민등록번호 FK
+    String 회사명 FK
     date 신청일시
   }
   취업확정_구직자 {
-    String 주민등록번호 PK, FK
-    String 회사명 PK, FK
-    date 신청일시
+    int 신청번호 PK
+    date 취업확정일시
   }
   대학교 {
     String 대학명 PK
@@ -41,6 +41,8 @@ erDiagram
   기업 ||--o{ 구직자_취업신청내역 : "신청을 받는다"
   자격증_취득내역 o{--|| 구직자 : "자격증 취득"
   구직자 o{--o| 대학교 : "출신대학"
+  구직자 ||--o| 취업확정_구직자 : "특수화"
+  
 ```
 
 
