@@ -11,7 +11,7 @@ erDiagram
     String 주민등록번호 PK
     String 대학명 FK
     String 전공_분야
-    nuumber(3,2) 대학_학점
+    decimal(3,2) 대학_학점
     int 토익_성적
     int 희망_연봉
   }
@@ -27,7 +27,7 @@ erDiagram
     date 신청일시
   }
   취업확정 {
-    int 신청번호 PK
+    int 신청번호 PK, FK
     date 취업확정일시
   }
   대학교 {
